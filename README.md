@@ -11,11 +11,11 @@ A dead simple module to fetch secrets from AWS secret manager.
 ## Usage
 
 ```javascript
-const { getSecrets } = require('aws-secret-manager-fetcher')
+const { fetchSecrets } = require('aws-secret-manager-fetcher')
 
 async function init () {
   try {
-    let secrets = await getSecrets('my-secret-name')
+    let secrets = await fetchSecrets('my-secret-name')
   } catch (e) {
     console.log('Error getting secrets ', e)
   }
@@ -24,7 +24,7 @@ async function init () {
 
 ## API
 
-### `getSecrets(secretName, [, awsParams])`
+### `fetchSecrets(secretName, [, awsParams])`
 
 * `secretName` (String) - name of your secret.
 * `awsParams` (Object) - AWS SecretManager constructor [params](ttps://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SecretsManager.html#constructor-property). If empty or missing a region property, the default will be: `{ region: 'us-east-1' }`

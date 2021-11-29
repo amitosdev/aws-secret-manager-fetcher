@@ -1,1 +1,1 @@
-{"env":{"node":true},"plugins":["prettierx"],"extends":["eslint:recommended","plugin:prettierx/standardx"],"parserOptions":{"ecmaVersion":2020}}
+{"env":{"node":true, "es6":true},"plugins":["prettierx"],"extends":["eslint:recommended","plugin:prettierx/standardx"],"parserOptions":{"ecmaVersion":2020}}
