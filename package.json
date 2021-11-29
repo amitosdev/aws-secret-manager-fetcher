@@ -1,0 +1,23 @@
+{
+  "name": "aws-secret-manager-fetcher",
+  "version": "0.0.1",
+  "description": "Get secrets from AWS secret manager",
+  "main": "secrets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/amitosdev/aws-secret-manager-fetcher#readme",
+  "author": "Amit Tal",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "debug": "^4.3.1",
+    "eslint": "^7.30.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-prettierx": "^0.18.0",
+    "eslint-plugin-promise": "^4.3.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.42.0",
+    "lodash.isstring": "^4.0.1"
+  }
+}
