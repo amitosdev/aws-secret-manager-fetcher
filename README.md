@@ -27,4 +27,4 @@ async function init () {
 ### `getSecrets(secretName, [, awsParams])`
 
 * `secretName` (String) - name of your secret.
-* `awsParams` (Object) - AWS SecretManager constructor [params](ttps://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SecretsManager.html#constructor-property). if empty or missing region property, the Default will be: `{ region: 'us-east-1' }`
+* `awsParams` (Object) - AWS SecretManager constructor [params](ttps://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SecretsManager.html#constructor-property). If empty or missing a region property, the default will be: `{ region: 'us-east-1' }`
